@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    
+
+</head>
+<body style="margin: 8px; background-color: #84994F;">
+    <!--Formulario-->
+    <header id="inicio">
+        <img src="https://i.postimg.cc/NfsMVSkv/welcome.webp" alt="bienvenida" width="800" height="200">
+        <h1>Les damos la bienvenida a nuestra comuunidad</h1>
+    </header>
+    <hr>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/Pages/contactos.html">Contacto</a>
+        <a href="#">Inicio de sesión</a>
+    </nav>
+    <div>
+        <h2>Registro de usuario</h2>
+        <form action="#">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" required size="15">
+            <br>
+            
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="Ingrese su correo electrónico" required>
+            <br>
+            
+            <label for="password">Contraseña: </label>
+            <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+            <br>
+            
+            <label for="fechanacimiento">Fecha de nacimiento: </label>
+            <input type="date" id="fechanacimiento" required>
+            <br>
+            
+            <label for="">Género: </label>
+            <label for="masculino"><input type="radio" name="genero" id="masculino">Masculino</label>
+            <label for="femenino"><input type="radio" name="genero" id="femenino">Femenino</label>
+            <label for="otro"><input type="radio" name="genero" id="femenino">Otro</label>
+            <br>
+            
+            <label>Ciudad</label>
+            <select name="ciudad" id="ciudad">
+                <option value="" disabled selected>Seleccione su ciudad</option>
+                <option value="quito">Quito</option>
+                <option value="latacunga">Latacunga</option>
+                <option value="cuenca">Cuenca</option>
+                <option value="ibarra">Ibarra</option>
+            </select>
+            <br>
+
+            <label>Intereses</label>
+            <label><input type="checkbox" name="intereses" value="deportes">Deportes </label>
+            <label><input type="checkbox" name="intereses" value="lectura">Lectura </label>
+            <label><input type="checkbox" name="intereses" value="musica">Música </label>
+            <label><input type="checkbox" name="intereses" value="tecnologia">Tecnología </label>
+            <br>
+
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios" rows="15" cols="80" placeholder="Escriba sus comentarios"></textarea>
+            <br>
+
+            <label>Adjuntar identificación</label>
+            <br>
+            <input type="file">
+            <br>
+            <br>
+            <br>
+
+            <button>Botón simple</button>
+            <input type="submit" value="Guardar">
+
+        </form>
+    </div>
+</body>
+</html>
